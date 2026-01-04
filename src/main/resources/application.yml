@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: MedicalSchedule
+  profiles:
+    active:
+      - test
+
+

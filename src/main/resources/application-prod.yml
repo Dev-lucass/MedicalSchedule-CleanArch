@@ -1,0 +1,22 @@
+spring:
+  main:
+    banner-mode: OFF
+
+  datasource:
+    url: jdbc:postgres://localhost:5432//medicalSchedule_db
+    username: postgres
+    password: secret
+
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+
+  flyway:
+    enabled: true
+    locations:
+      - db/migration
